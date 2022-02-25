@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <nav>
+            <ul><a href="/index.html">Home</a></ul>
+            <ul><a href="challenge.html">challenge</a></ul>
+            <ul><a href="#">Recipe</a></ul>
+            <ul><a href="/form.html">Form</a></ul>
+        </nav>
+
+        <header>
+            <h1>Reserve Your Room</h1>
+            <h2>Our reservation polices:</h2>
+        </header>
+
+        <section class="policies">
+            <ul>
+                <li>Check-in time after 3:00pm</li>
+                <li>Check-out time by 11:00am or charges are incurred</li>
+                <li>Breakfast and afternoon tea/snacks included in cost</li>
+                <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+                <li>50% deposit required at booking</li>
+                <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+            </ul>
+        </section>
+
+        <section class="reserve">
+            <form method="post" name="reservation" data-netlify="true">
+              
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+
+                <div>
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="phone" required>
+                </div>
+
+                <div>
+                    <label for="date">Check-in Date</label>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+
+                <div>
+                    <label for="date">Check-out Date</label>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+
+                <div>
+                    <label for="number">Number of Guests (4 is the maximum)</label>
+                    <input type="number" name="number" id="number" min=1 max=4 required>
+                </div>
+
+                <div>
+                    <label for="room">Room Type</label>
+                    <select>
+                        <option disabled hidden selected>Choose One</option>
+                        <option>Luxury</option>
+                        <option>Standard</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>Ocean View(additional cost)</div>
+                    <label for="view">Yes</label>
+                    <input type="radio" name="view" id="yes" value="yes">
+
+                    <label for="view">No</label>
+                    <input type="radio" name="view" id="no" value="no">
+                </div>
+
+                <div>
+                    <label for="notes">List Allergies or Other Requests</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+
+                <div>
+                    <label for="file">Vaccincation Proof</label>
+                    <input id="file" type="file" name="file">
+                </div>
+
+                <div>
+                    <label for="agree">I agree to all the terms listed above</label>
+                    <input type="checkbox" name="agree" id="agree" required>
+                </div>
+
+                <div>
+                    <label for="create">Create a password to return. Username is your email.</label>
+                    <input>
+                </div>
+                <button>Submit</button> <br>
+                <button>Reset</button>
+            </form>
+        </section>
+
+
+
+
+    </div>
+    <br>
+    <footer>
+        &copy;2022 The Inn at Bel Air <br>
+        Hartford, CT
+    </footer>
+</body>
+</html>
