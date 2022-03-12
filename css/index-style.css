@@ -1,38 +1,44 @@
-html ::after {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-  }
-  
-  h1,
-  h2,
-  h3 ::after {
-    font-size: large;
-    color: rgb(red, green, blue)
-    font-family: Georgia, "Times New Roman", Times, serif;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    
-  }
-  
-  h1 {
-    font-weight: bolder;
-    text-transform: capitalize;
-    font-weight: 100;
-    letter-spacing: 0.1rem;
-    font-size: 3.5rem;
-    text-decoration: none;
-    font-style: initial;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h3 ::before {
-    font-size: 1.5rem;
-  }
-  
-  .site-intro {
-    font-size: 1.25rem;
-  }
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  line-height: 1.5;
+  color: blueviolet;
+}
+
+nav a:link {
+  font-size: larger;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: underline dotted #ff7272 0.5rem;
+  letter-spacing: 2rem;
+  line-height: 2em;
+}
+
+p {
+  text-align: center;
+  font-size: medium;
+  font-weight: 700;
+  font-style: initial;
+  line-height: 5em;
+  letter-spacing: 0.6rem;
+}
+
+.assignments li {
+  list-style-type: none;
+}
+
+.assignments li::before {
+  content "\1f3ff ";
+  font-size: 2rem;
+}
+
+.assignments a:link,
+.assignments a:visted {
+  line-height: 1.6;
+}
+
+.assignments a:hover,
+.assignments a:active {
+  text-decoration: underline double rgba(red, green, blue, alpha) 2px;
+  text-underline-offset: 4px;
+}
