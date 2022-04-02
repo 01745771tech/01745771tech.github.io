@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 1.20rem;
+  line-height: 125%
+  color: #50504f
+}
+
+*,
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+nav {
+ background-color: #c98226;
+ text-align: center;
+
+}
+
+nav li{
+ display: inline;
+}
+
+nav a{
+    padding: 20px;
+    display: inline-block;
+    color #ffffff
+    text-decoration: none;
+    text-transfrom: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:link,
+nav a:avisted {
+ text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+background-color: #f3b96c;
+color: #50504f
+text-decoration: underline;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1
+h2
+h3
+{
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+h1{
+font-size: 3rem;
+margin: 6% 0;
+text-align: center;
+text-shadow: 3px 5px 3px #ccc;
+}
+
+header{
+    margin: 10%;
+}
+
+img {
+    float: left;
+    max-width: 30%;
+    margin-left: 12%;
+    margin-right: 9%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px #ccc;
+    shape-outside: circle(50%);
+}
+
+header h2 {
+    margin-top: 10%;
+
+}
+
+.rate{
+    clear: both;
+    margin-top: 8%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.eomji::after {
+    content: "\1f370";
+}
+
+.detials,
+.ingredients,
+.instructions,
+.nutrition {
+    width: 40%;
+    float: left;
+}
+
+.details,
+.instructions {
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+blockquote{
+    clear: both;
+    width: 300px;
+    height: 260px;
+    padding: 65px 9px 0px 13px; 
+    border-radius: 50%;
+    background-color: #f3b96c;
+    outline: dotted 4px #c98226;
+    outline-offset: 13px;
+    font-family: font-family: 'Rubik Wet Paint', cursive;
+    font-size: 1rem;
+    margin: 40px auto;
+}
+
+blockquote small {
+    text-align: right;
+}
+
+
+footer{
+    background-color: #c98226;
+    color: white;
+    padding: 4% 0;
+    margin-top: 10px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transfrom: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: block;
+    float: left;
+    width: 33%;
+}
