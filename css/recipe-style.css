@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Rubik Wet Paint', cursive;
   font-size: 1.20rem;
-  line-height: 125%
+  line-height: 125%;
   color: #50504f
 }
 
@@ -25,21 +25,20 @@ nav li{
 nav a{
     padding: 20px;
     display: inline-block;
-    color #ffffff
+    color: #ffffff;
     text-decoration: none;
-    text-transfrom: uppercase;
     letter-spacing: 1px;
 }
 
 nav a:link,
-nav a:avisted {
+nav a:visited {
  text-decoration: none;
 }
 
 nav a:hover,
 nav a:active {
 background-color: #f3b96c;
-color: #50504f
+color: #50504f;
 text-decoration: underline;
 }
 
@@ -115,7 +114,7 @@ blockquote{
     background-color: #f3b96c;
     outline: dotted 4px #c98226;
     outline-offset: 13px;
-    font-family: font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
     font-size: 1rem;
     margin: 40px auto;
 }
@@ -135,7 +134,6 @@ footer{
 footer a {
     display: block;
     text-align: center;
-    text-transfrom: uppercase;
     text-decoration: none;
     color: white;
 }
@@ -150,4 +148,9 @@ footer ul{
     display: block;
     float: left;
     width: 33%;
+}
+
+nav li,
+footer li {
+    text-transform: uppercase;
 }
