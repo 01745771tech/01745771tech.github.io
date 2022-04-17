@@ -28,7 +28,6 @@ p {
 }
 
 .assignments li::before {
-  content "\1f3ff ";
   font-size: 2rem;
 }
 
@@ -41,4 +40,79 @@ p {
 .assignments a:active {
   text-decoration: underline double rgba(red, green, blue, alpha) 2px;
   text-underline-offset: 4px;
+}
+
+nav{
+float: right;
+position: sticky;
+top: 0;
+background-color: rgb(227, 127, 255);
+transform: skew(15deg) scale(.6) rotate(45deg);
+
+}
+
+.assignments{
+  float: left;
+  bottom: 0;
+  background-color: salmon;
+  transform: scale(.8) rotate(-45deg);
+}
+
+.guide{
+  position: relative;
+  float: right;
+  bottom: 0;
+  background-color: rgb(189, 255, 127);
+  transform: scale(.6);
+}
+
+.fade-text {
+  animation-delay: 1s;
+    animation-duration: 4s;
+    animation-name: fadeTxt;
+    animation-timing-function: ease-out;
+    background-color: purple;
+    color: white;
+}
+
+@keyframes fadeTxt {
+  0% {
+    background-color: transparent;
+    color: purple;
+}
+
+25% {
+    background-color: blue;
+}
+
+50% {
+    background-color: orange;
+}
+
+75% {
+    background-color: pink;
+}
+
+100% {
+    background-color: purple;
+    color: white;
+}
+
+.fade-img {
+animation: .fade-img;
+animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeimg {
+  0% {
+    opacity: 0; 
+}
+
+100% {
+  opacity: 1;
+  border-radius: 50%;
+  border: solid rgb(189, 255, 127);
+}
+
 }
