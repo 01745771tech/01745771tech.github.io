@@ -9,7 +9,7 @@ h2,
 h3 ::after {
   font-size: large;
   color: rgb(red, green, blue)
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-decoration: underline;
   text-underline-offset: 6px;
   

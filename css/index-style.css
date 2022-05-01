@@ -75,7 +75,7 @@ transform: skew(15deg) scale(.6) rotate(45deg);
     color: white;
 }
 
-@keyframes fadeTxt {
+@keyframes fadeimg {
   0% {
     background-color: transparent;
     color: purple;
@@ -99,20 +99,19 @@ transform: skew(15deg) scale(.6) rotate(45deg);
 }
 
 .fade-img {
-animation: .fade-img;
-animation-fill-mode: forwards;
-
+  animation: fadeimg ease 14s;
+  animation-fill-mode: forwards;
 }
-
-@keyframes fadeimg {
-  0% {
-    opacity: 0; 
-}
-
-100% {
-  opacity: 1;
-  border-radius: 50%;
-  border: solid rgb(189, 255, 127);
-}
-
-}
+  
+  @keyframes fadeTxt {
+    0% {
+      opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+    border-radius: 50%;
+    border: solid rgb(189, 255, 127);
+  }
+  
+  }
